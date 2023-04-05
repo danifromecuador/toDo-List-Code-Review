@@ -1,4 +1,5 @@
-// import './style.css';
+import _ from 'lodash';
+import './style.css';
 import {
   add, render, remove, edit,
 } from './modules/functions.js';
