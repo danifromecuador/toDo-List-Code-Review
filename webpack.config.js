@@ -9,6 +9,11 @@ module.exports = {
       template: './src/index.html',
     }),
   ],
+
+  devServer: {
+    static: './dist',
+  },
+
   module: {
     rules: [
       {
@@ -22,4 +27,9 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     clean: true,
   },
+
+  // optimization: {
+  //   runtimeChunk: 'single',
+  // },
+
 };
